@@ -1,0 +1,36 @@
+/* Importa las capas base, componentes y utilidades de Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos globales personalizados */
+body {
+  /* Suavizado de fuentes */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Estilos personalizados para la barra de scroll (Tema Oscuro Profesional) */
+/* Nota: Estos estilos son específicos de WebKit (Chrome, Safari, Edge) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px; /* Más delgada */
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1f2937; /* bg-gray-800 */
+  border-radius: 3px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #4b5563; /* bg-gray-600 */
+  border-radius: 3px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #6b7280; /* bg-gray-500 */
+}
+
+/* Para Firefox (más limitado) */
+.custom-scrollbar {
+ scrollbar-width: thin;
+ scrollbar-color: #4b5563 #1f2937; /* thumb track */
+}
+
